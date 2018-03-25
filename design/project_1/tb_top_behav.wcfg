@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="54733032fs"></ZoomEndTime>
+      <Cursor1Time time="140000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/tb_top/tb_clk" type="logic">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/tb_WB_Data" type="array">
+      <obj_property name="ElementShortName">tb_WB_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_WB_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/PC" type="array">
+      <obj_property name="ElementShortName">PC[8:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/instr_mem/ra" type="array">
+      <obj_property name="ElementShortName">ra[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ra[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/instr_mem/rd" type="array">
+      <obj_property name="ElementShortName">rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IfReg/INSTin" type="array">
+      <obj_property name="ElementShortName">INSTin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INSTin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IfReg/PCin" type="array">
+      <obj_property name="ElementShortName">PCin[8:0]</obj_property>
+      <obj_property name="ObjectShortName">PCin[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IfReg/sINST" type="array">
+      <obj_property name="ElementShortName">sINST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sINST[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IfReg/sPC" type="array">
+      <obj_property name="ElementShortName">sPC[8:0]</obj_property>
+      <obj_property name="ObjectShortName">sPC[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IfReg/INSTout" type="array">
+      <obj_property name="ElementShortName">INSTout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INSTout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IfReg/PCout" type="array">
+      <obj_property name="ElementShortName">PCout[8:0]</obj_property>
+      <obj_property name="ObjectShortName">PCout[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/rf/rg_wrt_dest" type="array">
+      <obj_property name="ElementShortName">rg_wrt_dest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rg_wrt_dest[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/rf/rg_rd_addr1" type="array">
+      <obj_property name="ElementShortName">rg_rd_addr1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rg_rd_addr1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/rf/rg_rd_addr2" type="array">
+      <obj_property name="ElementShortName">rg_rd_addr2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rg_rd_addr2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/rf/rg_wrt_data" type="array">
+      <obj_property name="ElementShortName">rg_wrt_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rg_wrt_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/MemWrtDataIn" type="array">
+      <obj_property name="ElementShortName">MemWrtDataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemWrtDataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/MemWrtAddressIn" type="array">
+      <obj_property name="ElementShortName">MemWrtAddressIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemWrtAddressIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/RegDstIn" type="array">
+      <obj_property name="ElementShortName">RegDstIn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDstIn[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/MemWrtDataOut" type="array">
+      <obj_property name="ElementShortName">MemWrtDataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemWrtDataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/MemWrtAddressOut" type="array">
+      <obj_property name="ElementShortName">MemWrtAddressOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemWrtAddressOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/RegDstOut" type="array">
+      <obj_property name="ElementShortName">RegDstOut[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDstOut[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/sRegDst" type="array">
+      <obj_property name="ElementShortName">sRegDst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sRegDst[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/c/Opcode" type="array">
+      <obj_property name="ElementShortName">Opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/c/RegWrite" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+      <obj_property name="label">CCRegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IdExeReg/RegWrtEnIn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrtEnIn</obj_property>
+      <obj_property name="ObjectShortName">RegWrtEnIn</obj_property>
+      <obj_property name="label">IDEXERegWrtEnIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IdExeReg/sRegWrtEn" type="logic">
+      <obj_property name="ElementShortName">sRegWrtEn</obj_property>
+      <obj_property name="ObjectShortName">sRegWrtEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/IdExeReg/RegWrtEnOut" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrtEnOut</obj_property>
+      <obj_property name="ObjectShortName">RegWrtEnOut</obj_property>
+      <obj_property name="label">IDEXERegWrtEnOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/RegWrtEnIn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrtEnIn</obj_property>
+      <obj_property name="ObjectShortName">RegWrtEnIn</obj_property>
+      <obj_property name="label">EXEMEMRegWrtEnIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/sRegWrtEn" type="logic">
+      <obj_property name="ElementShortName">sRegWrtEn</obj_property>
+      <obj_property name="ObjectShortName">sRegWrtEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/MemRegF/RegWrtEnOut" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrtEnOut</obj_property>
+      <obj_property name="ObjectShortName">RegWrtEnOut</obj_property>
+      <obj_property name="label">EXEMEMRegWrtEnOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/RegWrtEnIn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrtEnIn</obj_property>
+      <obj_property name="ObjectShortName">RegWrtEnIn</obj_property>
+      <obj_property name="label">WBRegWrtEnIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/sRegWrtEn" type="logic">
+      <obj_property name="ElementShortName">sRegWrtEn</obj_property>
+      <obj_property name="ObjectShortName">sRegWrtEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/RegWrtEnOut" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RegWrtEnOut</obj_property>
+      <obj_property name="ObjectShortName">RegWrtEnOut</obj_property>
+      <obj_property name="label">WBRegWrtEnOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/RegDstIn" type="array">
+      <obj_property name="ElementShortName">RegDstIn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDstIn[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/RegDstOut" type="array">
+      <obj_property name="ElementShortName">RegDstOut[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDstOut[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/sRegDst" type="array">
+      <obj_property name="ElementShortName">sRegDst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sRegDst[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/rf/rg_wrt_en" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rg_wrt_en</obj_property>
+      <obj_property name="ObjectShortName">rg_wrt_en</obj_property>
+      <obj_property name="label">RF_wrt_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/rf/register_file" type="array">
+      <obj_property name="ElementShortName">register_file[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">register_file[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/MemALUresultIn" type="array">
+      <obj_property name="ElementShortName">MemALUresultIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemALUresultIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/sMemALUresult" type="array">
+      <obj_property name="ElementShortName">sMemALUresult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sMemALUresult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/riscV/dp/WBreg/MemALUresultOut" type="array">
+      <obj_property name="ElementShortName">MemALUresultOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemALUresultOut[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../../HazardDetectUnit.sv"
+sv xil_defaultlib  "../../../../mux3t1.sv"
+sv xil_defaultlib  "../../../../ForwardingUnit.sv"
+sv xil_defaultlib  "../../../../WBregFile.sv"
+sv xil_defaultlib  "../../../../RegFile.sv"
+sv xil_defaultlib  "../../../../mux2.sv"
+sv xil_defaultlib  "../../../../MemReg.sv"
+sv xil_defaultlib  "../../../../instructionmemory.sv"
+sv xil_defaultlib  "../../../../imm_Gen.sv"
+sv xil_defaultlib  "../../../../IFReg.sv"
+sv xil_defaultlib  "../../../../IDEXEReg.sv"
+sv xil_defaultlib  "../../../../flopr.sv"
+sv xil_defaultlib  "../../../../datamemory.sv"
+sv xil_defaultlib  "../../../../alu.sv"
+sv xil_defaultlib  "../../../../adder.sv"
+sv xil_defaultlib  "../../../../Datapath.sv"
+sv xil_defaultlib  "../../../../Controller.sv"
+sv xil_defaultlib  "../../../../ALUController.sv"
+sv xil_defaultlib  "../../../../RISC_V.sv"
+sv xil_defaultlib  "../../../../../verif/tb_top.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

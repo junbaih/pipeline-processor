@@ -1,0 +1,43 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/HazardDetectUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetectUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/mux3t1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/ForwardingUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/WBregFile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBRegFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/RegFile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/MemReg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemRegFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/IFReg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFRegFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/IDEXEReg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXERegFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+WARNING: [VRFC 10-756] identifier IfInstout is used before its declaration [F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/Datapath.sv:100]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/RISC_V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/verif/tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/UCI/2018Winter/CSE132L/Project/pipeline processor/design/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

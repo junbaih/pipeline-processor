@@ -1,0 +1,488 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/sim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 !s110 1521879438
+!i10b 1
+!s100 ijVXn`j8gkb?JEem_D[5R0
+IfGO<BNJf5W^J[aG3MjfXD3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+R0
+Z4 w1521846011
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/adder.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/adder.sv
+L0 3
+Z5 OL;L;10.4c;61
+r1
+!s85 0
+31
+Z6 !s108 1521879438.000000
+Z7 !s107 /users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/RISC_V.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/Datapath.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/Controller.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/RegFile.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/alu.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/ALUController.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/instructionmemory.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/datamemory.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/WBregFile.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/MemReg.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/IFReg.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/IDEXEReg.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/HazardDetectUnit.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/ForwardingUnit.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/mux3t1.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/mux2.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/imm_Gen.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/flopr.sv|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/adder.sv|
+Z8 !s90 -quiet|-64|-sv|-f|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/rtl.cfg|
+!i113 0
+Z9 o-quiet -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+valu
+R1
+R2
+!i10b 1
+!s100 G4AOmG@WRn27:VmY4mWC10
+Ii@`=fOOfJSCO_3d]g:[kC2
+R3
+!s105 alu_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/alu.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/alu.sv
+Z10 L0 23
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vALUController
+R1
+R2
+!i10b 1
+!s100 RGR02:?QERFdf8[:kbQaN2
+I?h79>67P:PTY2MGDaI29m3
+R3
+!s105 ALUController_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/ALUController.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/ALUController.sv
+R10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@a@l@u@controller
+vController
+R1
+R2
+!i10b 1
+!s100 bXH77O<ZIIg:P:PN4A1]X3
+II??h>i`PM<7mS@dZ1EXb]1
+R3
+!s105 Controller_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/Controller.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/Controller.sv
+Z11 L0 22
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@controller
+vdatamemory
+R1
+R2
+!i10b 1
+!s100 jnZAR?6OKKaNBcUbK:ocM3
+Ij=_Fm468Il8QTz_5T7XGX2
+R3
+!s105 datamemory_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/datamemory.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/datamemory.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vDatapath
+R1
+R2
+!i10b 1
+!s100 AOIPiRU>1;8R8[XF`LVcc3
+IQJeBX5fUB:I93[c`YlS1h1
+R3
+!s105 Datapath_sv_unit
+S1
+R0
+w1521876525
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/Datapath.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/Datapath.sv
+R11
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@datapath
+vflopr
+R1
+R2
+!i10b 1
+!s100 B6BS^>`X=WIeQVmG9i5VI0
+IEMXjSEXPYE97AncMl`IXD1
+R3
+!s105 flopr_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/flopr.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/flopr.sv
+R10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vForwardingUnit
+R1
+R2
+!i10b 1
+!s100 PN7X1Zjb^AFJMjI_5jdU_2
+Izi4eD700RAeE`fzdTGQS63
+R3
+!s105 ForwardingUnit_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/ForwardingUnit.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/ForwardingUnit.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@forwarding@unit
+vHazardDetectUnit
+R1
+R2
+!i10b 1
+!s100 9b;hVe1i;^I2kVe6b^mhY1
+IKB<AknFE=T0Yfa3==_>GK1
+R3
+!s105 HazardDetectUnit_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/HazardDetectUnit.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/HazardDetectUnit.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@hazard@detect@unit
+vIDEXERegFile
+R1
+R2
+!i10b 1
+!s100 GI?1KFWnb6FRf>=mkcLQ31
+IGlM[7KIb:28h>`0gzi;<S3
+R3
+!s105 IDEXEReg_sv_unit
+S1
+R0
+w1521879411
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/IDEXEReg.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/IDEXEReg.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@i@d@e@x@e@reg@file
+vIFRegFile
+R1
+R2
+!i10b 1
+!s100 Q2BbSL=>?hbl6zR^:JA6]2
+IgTM`]`2QYe]J_`dkSQV2Y2
+R3
+!s105 IFReg_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/IFReg.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/IFReg.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@i@f@reg@file
+vimm_Gen
+R1
+R2
+!i10b 1
+!s100 @eKd=60YlgS^b@R?IeS[13
+Iz><8Rnn5ZVePQ@A:h4@ig0
+R3
+!s105 imm_Gen_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/imm_Gen.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/imm_Gen.sv
+R10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+nimm_@gen
+vinstructionmemory
+R1
+R2
+!i10b 1
+!s100 4502_7eAIeGN=AeNUe]7z0
+INAR_NaE?6E8^TdIGUSk9Q3
+R3
+!s105 instructionmemory_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/instructionmemory.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/instructionmemory.sv
+R10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vMemRegFile
+R1
+R2
+!i10b 1
+!s100 =YEN=UK5H;2YEUnn4zbTK3
+IZjDQVWgLTiX?1ZBbOlDD10
+R3
+!s105 MemReg_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/MemReg.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/MemReg.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@mem@reg@file
+vmux2
+R1
+R2
+!i10b 1
+!s100 @X6>V^M3YMfab:XdY67SE1
+I_^kUKmF1K<;ZIALL88?dV3
+R3
+!s105 mux2_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/mux2.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/mux2.sv
+R10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vmux3
+R1
+R2
+!i10b 1
+!s100 :@a0NU3SIO=4D[<:FWQ=E1
+ICYM5ScG>j81_PDiojO5QH1
+R3
+!s105 mux3t1_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/mux3t1.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/mux3t1.sv
+R10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vRegFile
+R1
+R2
+!i10b 1
+!s100 ZB2XoXHoRK5EzoBEQKgn40
+I3RN3DSbaRe?NioQ6OceKG0
+R3
+!s105 RegFile_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/RegFile.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/RegFile.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@reg@file
+vriscv
+R1
+R2
+!i10b 1
+!s100 l7AUEPYjmUBHbeAo2zO2g0
+IK<BUO?7c>GT]eQBcg9z<m3
+R3
+!s105 RISC_V_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/RISC_V.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/RISC_V.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+vtb_top
+R1
+R2
+!i10b 1
+!s100 LV;mOZ`7WEY@A5TIDeWE=2
+IN_IcZ4KDRJ^zKnOHK4>c_0
+R3
+!s105 tb_top_sv_unit
+S1
+R0
+w1521875966
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/verif/tb_top.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/verif/tb_top.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 /users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/verif/tb_top.sv|
+!s90 -quiet|-64|-sv|-f|/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/verif/tb.cfg|-work|work|
+!i113 0
+o-quiet -sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Ttb_top_opt
+!s110 1521879439
+VIX7InggL1E<[V96MAL>:90
+04 6 4 work tb_top fast 0
+o-quiet +acc -work work
+ntb_top_opt
+OL;O;10.4c;61
+vWBRegFile
+R1
+R2
+!i10b 1
+!s100 6XogD[Kd64A^MWKdJBiNl0
+I70@CHL2QfX>`NFbVWFB`o2
+R3
+!s105 WBregFile_sv_unit
+S1
+R0
+R4
+8/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/WBregFile.sv
+F/users/ugrad/2017/fall/junbaih/CSE132L/project/pipeline_processor/design/WBregFile.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+n@w@b@reg@file
