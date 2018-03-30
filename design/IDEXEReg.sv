@@ -34,7 +34,7 @@ module IDEXERegFile#(
    logic [1:0] sALUop;
    logic sALUsrc,sMemWrtEn,sMemRdEn,sBranch,sJUMP,sJALR,sRegWrtEn;
    logic [2:0] sRegWrtSrc;
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         if(rst==1'b1) begin
             sALUsrc<=0;
             sMemWrtEn<=0;
@@ -65,7 +65,7 @@ module IDEXERegFile#(
                         sRegWrtSrc<=RegWrtSrcIn;
             end
     end
-    
+    /*
     always @(posedge clk) begin
             if(rst==1'b1) begin
                 ALUsrcOut<=0;
@@ -97,8 +97,8 @@ module IDEXERegFile#(
                             RegWrtSrcOut<=sRegWrtSrc;
                 end
         end
-        
-  /*  
+        */
+ 
  assign regData1Out = sRegdata1;
  assign regData2Out = sRegdata2;
  assign immOut = simm;
@@ -117,5 +117,5 @@ module IDEXERegFile#(
  assign JUMPOut = sJUMP;
  assign JALROut = sJALR;
  assign RegWrtEnOut = sRegWrtEn;
-*/
+
 endmodule

@@ -29,7 +29,7 @@ module MemRegFile#(
    logic [INS_ADDRESS-1:0] sPC;
    logic sMemWrtEn,sMemRdEn,sBranch,sZero,sJUMP,sJALR,sRegWrtEn;
    logic [2:0] sRegWrtSrc;
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         if(rst==1'b1) begin
             sMemWrtEn<=0;
             sMemRdEn<=0;
@@ -57,6 +57,7 @@ module MemRegFile#(
                         sRegWrtSrc<=RegWrtSrcIn;
             end
     end
+    /*
     always @(posedge clk) begin
             if(rst==1'b1) begin
                 MemWrtEnOut<=0;
@@ -85,5 +86,20 @@ module MemRegFile#(
                             RegWrtSrcOut<=sRegWrtSrc;
                 end
         end
-
+*/
+   assign             PCout=sPC;
+ assign MemWrtDataOut=sMemWrtData;
+ assign MemWrtAddressOut=sMemWrtAddress;
+ assign immOut=simm;
+ assign funct3Out=sfunct3;
+ assign funct7Out=sfunct7;
+ assign RegDstOut=sRegDst;
+ assign MemWrtEnOut=sMemWrtEn;
+ assign MemRdEnOut=sMemRdEn;
+ assign BranchOut=sBranch;
+ assign ZeroOut=sZero;
+ assign JUMPOut=sJUMP;
+ assign JALROut=sJALR;
+ assign            RegWrtEnOut=sRegWrtEn;
+ assign            RegWrtSrcOut=sRegWrtSrc;
 endmodule

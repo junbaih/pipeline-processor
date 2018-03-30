@@ -65,8 +65,8 @@ always @(negedge clk) begin
 end
 
 assign rg_rd_data1 = register_file[rg_rd_addr1];
-assign rg_rd_data2 =  register_file[rg_rd_addr2];
-//temp_rd_data2;   // = register_file[rg_rd_addr2];
+assign rg_rd_data2 =  //register_file[rg_rd_addr2];
+temp_rd_data2;    //register_file[rg_rd_addr2];
 
 /*
 always @(posedge clk) begin

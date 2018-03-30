@@ -27,7 +27,7 @@ module WBRegFile#(
    logic sRegWrtEn;
    logic [2:0] sRegWrtSrc;
    logic [4:0] sRegDst;
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         if(rst==1'b1) begin
 
             sRegWrtEn<=0;
@@ -42,6 +42,7 @@ module WBRegFile#(
                         sRegDst<=RegDstIn;
             end
     end
+    /*
     always @(posedge clk) begin
             if(rst==1'b1) begin
           
@@ -59,5 +60,13 @@ module WBRegFile#(
                             RegDstOut<=sRegDst;
                 end
         end
-
+*/
+assign   MemRdDataOut=sMemRdData;
+    assign          MemALUresultOut=sMemALUresult;
+     assign         PCOut=sPC;
+                        
+        
+   assign                       RegWrtEnOut=sRegWrtEn;
+     assign                     RegWrtSrcOut=sRegWrtSrc;
+       assign                   RegDstOut=sRegDst;
 endmodule

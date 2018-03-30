@@ -16,7 +16,7 @@ module IFRegFile#(
    );
 logic [INS_W-1:0] sINST;
 logic [INS_ADDRESS-1:0] sPC;
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         if(rst==1'b1) begin
             sPC<=0;
             sINST<=0;
@@ -26,6 +26,7 @@ logic [INS_ADDRESS-1:0] sPC;
             sINST<=INSTin;
             end
     end
+    /*
     always_ff @(posedge clk) begin
          if(rst==1'b1) begin
             PCout<=0;
@@ -36,6 +37,7 @@ logic [INS_ADDRESS-1:0] sPC;
             INSTout<=sINST;
         end       
     end
-//assign PCout = sPC;
-//assign INSTout = sINST; 
+    */
+assign PCout = sPC;
+assign INSTout = sINST; 
 endmodule
