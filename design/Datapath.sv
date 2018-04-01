@@ -89,8 +89,8 @@ logic stall;
     if(stall)
         PCstl = PC;
     else
-        //PCstl = PCF;
-        PCstl = PC+9'b100;
+        PCstl = PCF;
+        //PCstl = PC+9'b100;
     end
     flopr #(9) pcreg(clk, reset, PCstl, PC);
 
@@ -133,24 +133,28 @@ assign IFflash = reset | Jump|Brcc;
     RegFile rf(clk, reset, WBRegWrtEnOut, WBRegDstOut, IfInstout[19:15], IfInstout[24:20],
             Result,IfInstout[14:12],IfInstout[6:0], Reg1, Reg2);
             
-            
+ logic [1:0] fwbr1,fwbr2;
+ logic [DATA_W-1:0] Breg1,Breg2;
       ///comparator 
+      ForwardingUnit fwdBranch(IfInstout[19:15], IfInstout[24:20],IDregDstOut,MemRegDstOut,IDRegWrtEnOut,MemRegWrtEnOut,fwbr1,fwbr2);
+          mux3 #(32) fwdbrmux1(Reg1,MemWrtAddressOut,ALUResult,fwbr1,Breg1);
+           mux3 #(32) fwdbrmux2(Reg2,MemWrtAddressOut,ALUResult,fwbr2,Breg2);
       always_comb begin
         if(Branch) begin
             cZero = 1'b0;
             case(IfInstout[14:12])
             3'b000:
-                cZero = (Reg1==Reg2);
+                cZero = (Breg1==Breg2);
             3'b001:               //BNE
-                cZero = (Reg1!=Reg2);
+                cZero = (Breg1!=Breg2);
             3'b100:
-                cZero = ($signed(Reg1)<$signed(Reg2));
+                cZero = ($signed(Breg1)<$signed(Breg2));
             3'b101:
-                cZero = ($signed(Reg1)>=$signed(Reg2));
+                cZero = ($signed(Breg1)>=$signed(Breg2));
             3'b110:
-                cZero = (Reg1<Reg2);
+                cZero = (Breg1<Breg2);
             3'b111:
-                cZero = (Reg1>=Reg2);
+                cZero = (Breg1>=Breg2);
             default:
                 cZero = 1'b0;
         endcase
