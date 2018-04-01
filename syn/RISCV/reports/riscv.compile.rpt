@@ -1,0 +1,353 @@
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | J-2014.09-DWBB_201409.4 |     *     |
+| Licensed DW Building Blocks        | J-2014.09-DWBB_201409.4 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 258 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/saed32lvt_tt1p05vn40c.db.alib'
+Information: Ungrouping hierarchy c before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ac before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/pcadd before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/pcreg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/IfReg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/HazardUnit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/IdExeReg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/jpaddr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/jalpcsrc before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/Ext_Imm before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/fwdUnit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/fwdmux1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/fwdmux2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/srcbmux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/alu_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/MemRegF before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/pcaddn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/pcmux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/pcBorJ before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy dp/WBreg before Pass 1 (OPT-776)
+Information: Ungrouping 20 of 25 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'datamemory'
+ Implement Synthetic for 'datamemory'.
+  Processing 'Datapath'
+Information: The register 'cZero_reg' will be removed. (OPT-1207)
+Information: Added key list 'DesignWare' to design 'Datapath'. (DDB-72)
+ Implement Synthetic for 'Datapath'.
+  Processing 'instructionmemory'
+ Implement Synthetic for 'instructionmemory'.
+  Processing 'riscv'
+  Processing 'RegFile'
+ Implement Synthetic for 'RegFile'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_LVT' in the library 'saed32lvt_tt1p05vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_LVT' in the library 'saed32lvt_tt1p05vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_LVT' in the library 'saed32lvt_tt1p05vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_LVT' in the library 'saed32lvt_tt1p05vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_LVT' in the library 'saed32lvt_tt1p05vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_LVT' in the library 'saed32lvt_tt1p05vn40c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'dp/IfReg/sINST_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/INSTout_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/sRegsrc1_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/regSrc1Out_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/sINST_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/INSTout_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/sRegsrc1_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/regSrc1Out_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/sINST_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/INSTout_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/sINST_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/INSTout_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/sINST_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/INSTout_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/sRegWrtSrc_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/RegWrtSrcOut_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/sRegWrtSrc_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/RegWrtSrcOut_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/sRegWrtSrc_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/RegWrtSrcOut_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/sRegWrtSrc_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/RegWrtSrcOut_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/sRegWrtSrc_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/RegWrtSrcOut_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/sRegWrtSrc_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/RegWrtSrcOut_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/pcreg/q_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/sPC_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/PCout_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/sPC_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/PCout_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/sPC_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/PCout_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/sPC_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/PCOut_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/pcreg/q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/sPC_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IfReg/PCout_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/sPC_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/IdExeReg/PCout_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/sPC_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/MemRegF/PCout_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/sPC_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/PCOut_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dp/WBreg/PCOut_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[2]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/PCOut_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[3]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/PCOut_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[4]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/PCOut_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[5]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/PCOut_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[6]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/PCOut_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[7]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/PCOut_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/WBreg/sPC_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/PCout_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/MemRegF/sPC_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/PCout_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/IdExeReg/sPC_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/PCout_reg[8]' will be removed. (OPT-1207)
+Information: The register 'dp/IfReg/sPC_reg[8]' will be removed. (OPT-1207)
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy dp 'Datapath' #insts = 2841. (OPT-777)
+Information: Added key list 'DesignWare' to design 'riscv'. (DDB-72)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:15  334385.9      6.57   43632.6      11.1                           231150075904.0000
+    0:04:15  334383.9      6.57   43632.6      11.1                           231150010368.0000
+    0:04:15  334383.9      6.57   43632.6      11.1                           231150010368.0000
+    0:04:16  334383.7      6.57   43632.6      11.1                           231148519424.0000
+  Re-synthesis Optimization (Phase 1)
+  Re-synthesis Optimization (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:05:07  374647.2      5.83   56345.4      31.0                           212804599808.0000
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:05:07  374647.2      5.83   56345.4      31.0                           212804599808.0000
+    0:05:15  374627.6      5.83   55486.8      28.5                           212446593024.0000
+    0:05:17  374655.0      5.43   55467.9      30.1                           212481359872.0000
+    0:05:18  374655.0      5.43   55467.9      30.1                           212481359872.0000
+    0:05:18  374655.5      5.42   55467.8      30.1                           212482031616.0000
+    0:05:18  374655.5      5.42   55467.8      30.1                           212482031616.0000
+    0:05:18  374655.5      5.42   55467.8      30.1                           212482031616.0000
+    0:05:18  374655.5      5.42   55467.8      30.1                           212482031616.0000
+    0:05:21  374798.5      4.10   55438.8      43.5                           212658536448.0000
+    0:05:21  374798.5      4.10   55438.8      43.5                           212658536448.0000
+    0:05:26  375008.0      3.80   52570.7      34.9                           212794441728.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:05:26  375008.5      3.80   52570.7      34.9                           212796850176.0000
+    0:05:27  375008.3      3.79   52570.7      34.9                           212793212928.0000
+    0:05:27  375008.3      3.79   52570.7      34.9                           212793212928.0000
+    0:05:31  375206.7      3.65   52567.5      40.4                           212914536448.0000
+    0:05:31  375207.7      3.65   52567.4      40.4                           212919336960.0000
+    0:05:31  375210.9      3.63   52566.9      41.9                           212923088896.0000
+    0:05:31  375210.9      3.63   52566.9      41.9                           212923088896.0000
+    0:05:32  375210.9      3.63   52566.9      41.9                           212923088896.0000
+    0:05:32  375210.3      3.63   52566.9      41.9                           212920680448.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:05:32  375210.3      3.63   52566.9      41.9                           212920680448.0000
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+    0:05:45  374979.7      3.56   48749.9       0.0                           213361246208.0000
+    0:05:46  374979.7      3.56   48749.9       0.0                           213361246208.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:05:46  374979.7      3.56   48749.9       0.0                           213361246208.0000
+    0:05:52  374984.3      3.56   48662.4       0.0                           213362212864.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:05  374977.2      3.55   48662.1       0.0                           213359935488.0000
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+    0:07:01  376973.7      3.25   31014.2       0.0                           212995244032.0000
+    0:07:02  376987.7      3.23   31013.8       0.0                           212997406720.0000
+    0:07:11  377128.7      3.23   34703.4       0.0                           212130086912.0000
+    0:07:11  377128.7      3.23   34703.4       0.0                           212130086912.0000
+    0:07:11  377128.7      3.23   34703.4       0.0                           212130086912.0000
+    0:07:11  377129.2      3.23   34703.4       0.0                           212132495360.0000
+    0:07:11  377129.2      3.23   34703.4       0.0                           212132495360.0000
+    0:07:12  377129.2      3.23   34703.4       0.0                           212132495360.0000
+    0:07:12  377129.2      3.23   34703.4       0.0                           212132495360.0000
+    0:07:13  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:13  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:13  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:13  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:14  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:14  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:14  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:14  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:14  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:14  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:15  377134.2      3.20   34702.9       0.0                           212151123968.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:07:25  377134.2      3.20   34702.9       0.0                           212151123968.0000
+    0:07:31  376503.8      3.24   29137.5       0.0                           213353398272.0000
+    0:07:32  376492.6      3.21   29137.2       0.0                           213354053632.0000
+    0:07:51  376733.4      3.21   33676.8       0.0                           211892207616.0000
+    0:07:52  376731.8      3.21   33681.9       0.0                           211871334400.0000
+    0:07:53  376735.9      3.20   33681.9       0.0                           211887702016.0000
+    0:08:11  382839.2      3.20   33619.6      13.7                           211984220160.0000
+Loading db file '/users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db'
+Loading db file '/users/ugrad2/2012/spring/pooriam/libraries/saed32sram_tt1p05vn40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'dp/data_mem/clk': 18015 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1

@@ -36,7 +36,7 @@ module WBRegFile#(
             sMemRdData<=MemRdDataIn;
             sMemALUresult<=MemALUresultIn;
             sPC<=PCin;
-                     
+                     simm<=immIn;
                         sRegWrtEn<=RegWrtEnIn;
                         sRegWrtSrc<=RegWrtSrcIn;
                         sRegDst<=RegDstIn;
@@ -65,7 +65,7 @@ assign   MemRdDataOut=sMemRdData;
     assign          MemALUresultOut=sMemALUresult;
      assign         PCOut=sPC;
                         
-        
+        assign immOut = simm;
    assign                       RegWrtEnOut=sRegWrtEn;
      assign                     RegWrtSrcOut=sRegWrtSrc;
        assign                   RegDstOut=sRegDst;

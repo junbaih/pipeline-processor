@@ -121,9 +121,9 @@ assign IFflash = reset | Jump|Brcc;
     3'b000:
         Result = WBALUresultOut;
     3'b011:
-        Result = WBPC+3'b100 ;
+        Result = {23'b0,WBPC}+32'b100 ;
     3'b001:
-        Result = WBPC+WBimm;
+        Result = {23'b0,WBPC}+WBimm;
     3'b010:
         Result = WBimm;
     default:
@@ -136,9 +136,57 @@ assign IFflash = reset | Jump|Brcc;
  logic [1:0] fwbr1,fwbr2;
  logic [DATA_W-1:0] Breg1,Breg2;
       ///comparator 
-      ForwardingUnit fwdBranch(IfInstout[19:15], IfInstout[24:20],IDregDstOut,MemRegDstOut,IDRegWrtEnOut,MemRegWrtEnOut,fwbr1,fwbr2);
-          mux3 #(32) fwdbrmux1(Reg1,MemWrtAddressOut,ALUResult,fwbr1,Breg1);
-           mux3 #(32) fwdbrmux2(Reg2,MemWrtAddressOut,ALUResult,fwbr2,Breg2);
+          always_comb begin
+          
+          if(IDRegWrtEnOut && (IDregDstOut!=5'b0) && (IfInstout[19:15]==IDregDstOut))
+              fwbr1=2'b10; 
+          else if (MMemRdEnOut && (MemRegDstOut!=5'b0) && (IfInstout[19:15]==MemRegDstOut))
+                fwbr1 = 2'b11;
+          else if(MemRegWrtEnOut && (MemRegDstOut!=5'b0) && (IfInstout[19:15]==MemRegDstOut))
+              fwbr1=2'b01;
+         else fwbr1=2'b00;
+          
+          if(IDRegWrtEnOut && (IDregDstOut!=5'b0) && (IfInstout[24:20]==IDregDstOut))
+              fwbr2=2'b10;
+         else if (MMemRdEnOut && (MemRegDstOut!=5'b0) && (IfInstout[24:20]==MemRegDstOut))
+                             fwbr2 = 2'b11;
+          else if(MemRegWrtEnOut && (MemRegDstOut!=5'b0) && (IfInstout[24:20]==MemRegDstOut))
+              fwbr2=2'b01;
+          else fwbr2 = 2'b00;
+          end
+ //     ForwardingUnit fwdBranch(IfInstout[19:15], IfInstout[24:20],IDregDstOut,MemRegDstOut,IDRegWrtEnOut,MemRegWrtEnOut,fwbr1,fwbr2);
+  always_comb begin
+     Breg1 = Reg1;
+     case(fwbr1)
+     2'b00:
+         Breg1=Reg1;
+     2'b01:
+         Breg1=MemWrtAddressOut;
+     2'b10:
+        Breg1=ALUResult;
+     2'b11:
+        Breg1 = ReadData;
+     default:
+         Breg1=Reg1;
+     endcase
+     end
+   //       mux3 #(32) fwdbrmux1(Reg1,MemWrtAddressOut,ALUResult,fwbr1,Breg1);
+       always_comb begin
+      Breg2 = Reg2;
+      case(fwbr2)
+      2'b00:
+          Breg2=Reg2;
+      2'b01:
+          Breg2=MemWrtAddressOut;
+      2'b10:
+         Breg2=ALUResult;
+      2'b11:
+         Breg2 = ReadData;
+      default:
+          Breg2=Reg2;
+      endcase
+      end
+       //    mux3 #(32) fwdbrmux2(Reg2,MemWrtAddressOut,ALUResult,fwbr2,Breg2);
       always_comb begin
         if(Branch) begin
             cZero = 1'b0;
